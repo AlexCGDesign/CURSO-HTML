@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes</title>
+</head>
+<body>
+
+    <!--
+    <figure>
+
+        <img src="./assets/imagen1.webp" alt="Spiderman1" width="300">
+
+        <figcaption>Imagen videojuego spiderman 2</figcaption>
+
+    </figure>
+    -->
+    
+    <picture>
+
+        <source srcset="./assets/imagen3.jpeg" 
+        media="(min-width: 900px)">
+
+        <source srcset="./assets/imagen1.webp" 
+        media="(min-width: 500px)">
+
+        <img src="./assets/imagen2.webp" alt="">
+
+    </picture>
+
+    <style>
+        source, img{
+            width: 80%;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog</title>
+</head>
+<body>
+    
+    <h1>Dialog</h1>
+    <button id="abrir-modal">Abrir Modal</button>
+
+    <dialog id="modal">
+        <h2>¡Promoción Hostinger, ¡Descuento por ser suscriptor de AlexCG!</h2>
+        <p>Obten tu descuento con el cupón "ALEXCG"</p>
+        <a href="https://hostinger.com/alexcg">Ir a Hostinger</a>
+
+        <img src="./assets/hostinger.svg" alt="Hostinger Imagen">
+
+        <button id="boton-cerrar">Cerrar Modal</button>
+    </dialog>
+
+    <script>
+
+        const modal = document.getElementById("modal");
+        const cerrarModal = document.getElementById("boton-cerrar");
+        const abrirModal = document.getElementById("abrir-modal");
+
+        abrirModal.addEventListener("click", ()=>{
+
+            modal.showModal();
+
+        });
+
+        cerrarModal.addEventListener("click", ()=>{
+
+            modal.close();
+
+        })
+
+    </script>
+
+</body>
+</html>

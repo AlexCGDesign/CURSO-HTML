@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+
+    <h1>Formularios</h1>
+
+    <form>
+
+        <fieldset>
+            <legend>Ingresa datos Personales</legend>
+
+
+            <div>
+                <label for="nombre">Ingresa tu nombre:</label>
+                <input type="text" id="nombre" maxlength="10" minlength="5" required>
+            </div>
+            
+            <div>
+
+               <label>
+                    Ingresa tu Email
+                    <input type="email" required>
+               </label>
+
+            </div>
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de trabajo</legend>
+
+            <h3>Elige tu turno</h3>
+            <div>
+                <label>
+                    Mixto
+                    <input type="radio" name="turno">
+                </label>
+                
+                <label>
+                    Matutino
+                    <input type="radio" name="turno">
+                </label>
+
+                <label>
+                    Vespertino
+                    <input type="radio" name="turno">
+                </label>
+            </div>
+
+            <div>
+
+                <label>
+                    <input type="checkbox">
+                    Acepta terminos y condiciones
+                </label>
+
+            </div>
+
+            <select>
+
+                <option value="MX">México</option>
+                <option value="ARG">Argentina</option>
+                <option value="US">Estados Unidos</option>
+                <option value="" selected>Otro</option>
+
+            </select>
+
+            <textarea cols="10" rows="5"></textarea>
+
+
+        </fieldset>
+       
+
+        <input type="reset" value="Reicinar datos">
+       <button type="submit">Dame Click</button>
+    </form>
+    
+</body>
+</html>
